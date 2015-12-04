@@ -1,0 +1,49 @@
+.navbar-default{
+	background-color: transparent;
+	border-color: transparent;
+}
+
+nav{
+	height: 100px;
+	.container{
+		border-bottom: 1px solid $menu-border;
+	}
+}
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar-nav > li{
+	@extend .transition;
+	height: 100px;
+}
+
+.navbar-default .navbar-nav > li > a{
+	@extend .transition;
+	@extend .uppercase;
+	color:$text-light;
+	height: 100px;
+	line-height: 100px;
+	font-weight: 700;
+	&:hover{
+		color: $hover-menu;
+	}
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+	background-color: transparent;
+	color: $hover-menu;
+}
+
+.navbar-header, .navbar-brand{
+	height: 100px;
+	line-height: 100px;
+}
+
+.navbar-brand > img{
+	display: inline-block;
+}
+

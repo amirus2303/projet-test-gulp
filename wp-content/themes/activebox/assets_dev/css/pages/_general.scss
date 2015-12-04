@@ -1,0 +1,54 @@
+h1{
+	@extend .uppercase;
+	color: $text-light;
+	font-size: 40px;
+	&.big{
+		font-size: 60px;
+	}
+}
+
+
+h3{
+	@extend .uppercase;
+	color: $text-dark;
+	font-weight: 700;
+}
+
+p{
+	color: $p;
+}
+
+body{
+}
+.padding_top_40{
+	padding-top: 40px;
+}
+
+.padding_top_100{
+	padding-top: 100px;
+}
+
+.padding_bottom_100{
+	padding-bottom: 100px;
+}
+
+.margin_top_80{
+	margin-top: 80px;
+}
+
+
+.margin_bottom_25{
+	margin-bottom: 25px;
+}
+
+.margin_bottom_70{
+	margin-bottom: 70px;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+.transition{
+	transition: all 500ms ease-in-out;
+}

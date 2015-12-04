@@ -14,41 +14,41 @@ var gulp = require('gulp'),
 
 
 gulp.task('styles', function() {
-  return gulp.src('assets_dev/css/main.scss')
+  return gulp.src('wp-content/themes/activebox/assets_dev/css/style.scss')
     .pipe(sass())
-    .pipe(gulp.dest('assets_dist/css'))
+    .pipe(gulp.dest('wp-content/themes/activebox/'))
     .pipe(autoprefixer('last 2 version'))
-    .pipe(gulp.dest('assets_dist/css'))
+    .pipe(gulp.dest('wp-content/themes/activebox/'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('assets_dist/css'))
+    .pipe(gulp.dest('wp-content/themes/activebox/'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
 
 gulp.task('scripts', function() {
-  return gulp.src('assets_dev/js/**/*.js')
+  return gulp.src('wp-content/themes/activebox/assets_dev/js/**/*.js')
     .pipe(jshint('.jshintrc'))
     .pipe(jshint.reporter('default'))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('assets_dist/js'))
+    .pipe(gulp.dest('wp-content/themes/activebox/assets_dist/js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('assets_dist/js'))
+    .pipe(gulp.dest('wp-content/themes/activebox/assets_dist/js'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
 
 gulp.task('images', function() {
-  return gulp.src('assets_dev/img/**/*')
+  return gulp.src('wp-content/themes/activebox/assets_dev/img/**/*')
     .pipe(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true }))
-    .pipe(gulp.dest('assets_dist/img'))
+    .pipe(gulp.dest('wp-content/themes/activebox/assets_dist/img'))
     .pipe(notify({ message: 'Images task complete' }));
 });
 
 
 gulp.task('clean', function() {
-    return del(['assets_dist/css', 'assets_dist/js', 'assets_dist/img']);
+    return del(['wp-content/themes/activebox/assets_dist/css', 'wp-content/themes/activebox/assets_dist/js', 'wp-content/themes/activebox/assets_dist/img']);
 });
 
 gulp.task('default', ['clean'], function() {
@@ -58,18 +58,18 @@ gulp.task('default', ['clean'], function() {
 gulp.task('watch', function() {
 
   // Watch .scss files
-  gulp.watch('assets_dev/css/**/*.scss', ['styles']);
+  gulp.watch('wp-content/themes/activebox/assets_dev/css/**/*.scss', ['styles']);
 
   // Watch .js files
-  gulp.watch('assets_dev/js/**/*.js', ['scripts']);
+  gulp.watch('wp-content/themes/activebox/assets_dev/js/**/*.js', ['scripts']);
 
   // Watch image files
-  gulp.watch('assets_dev/img/**/*', ['images']);
+  gulp.watch('wp-content/themes/activebox/assets_dev/img/**/*', ['images']);
 
   // Create LiveReload server
   livereload.listen();
 
   // Watch any files in dist/, reload on change
-  gulp.watch(['assets_dist/**']).on('change', livereload.changed);
+  gulp.watch(['wp-content/themes/activebox/assets_dist/**']).on('change', livereload.changed);
 
 });

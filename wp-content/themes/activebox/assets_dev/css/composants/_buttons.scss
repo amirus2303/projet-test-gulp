@@ -1,0 +1,15 @@
+.btn{
+	@extend .transition;
+	@extend .uppercase;
+	padding: 10px 40px;
+	color: $text-light;
+	border-radius: 0;
+	font-weight: 700;
+	&.red{
+		background-color: $red-btn-bg;
+		&:hover{
+			color: $text-dark;
+			background-color: $red-btn-hover;
+		}
+	}
+}
