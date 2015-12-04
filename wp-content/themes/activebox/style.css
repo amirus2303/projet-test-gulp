@@ -6347,6 +6347,11 @@ button.close {
     .btn.red:hover {
       color: #2d3033;
       background-color: #ffffff; }
+  .btn.download_red {
+    background-color: #e84545; }
+    .btn.download_red:hover {
+      color: #ffffff;
+      background-color: #2d3033; }
 
 .navbar-default {
   background-color: transparent;
@@ -6406,20 +6411,40 @@ p {
 .padding_bottom_100 {
   padding-bottom: 100px; }
 
+.margin_top_25 {
+  margin-top: 25px; }
+
 .margin_top_80 {
   margin-top: 80px; }
+
+.no_margin_bottom {
+  margin-bottom: 0; }
 
 .margin_bottom_25 {
   margin-bottom: 25px; }
 
+.margin_bottom_40 {
+  margin-bottom: 40px; }
+
 .margin_bottom_70 {
   margin-bottom: 70px; }
 
-.uppercase, .btn, .navbar-default .navbar-nav > li > a, h1, h3 {
+.uppercase, .btn, .navbar-default .navbar-nav > li > a, h1, h3, .client_title, .sub_download {
   text-transform: uppercase; }
 
 .transition, .btn, .navbar-nav > li, .navbar-default .navbar-nav > li > a {
   transition: all 500ms ease-in-out; }
+
+.bg_purple, .purple_box {
+  background-color: #53354a; }
+
+.clearfix {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
 
 .header {
   background: url("/wp-content/themes/activebox/assets_dist/img/header.jpg") no-repeat top left;
@@ -6429,3 +6454,44 @@ p {
 .title_small {
   font-size: 22px;
   color: #ffffff; }
+
+.box-img {
+  width: 25%;
+  float: left; }
+
+.employe_name {
+  font-size: 22px;
+  color: #2d3033; }
+
+.employe_title {
+  font-size: 13px;
+  color: #e84545;
+  font-weight: 700; }
+
+.box_client {
+  width: 50%;
+  float: left; }
+
+.purple_box {
+  height: 609px;
+  padding: 100px 0 100px 85px; }
+
+.citation {
+  font-size: 36px;
+  color: #ffffff;
+  font-style: italic;
+  font-weight: 400; }
+
+.client_title {
+  font-size: 13px;
+  margin-top: 40px;
+  color: #ffffff; }
+
+.download {
+  font-size: 28px;
+  color: #2d3033; }
+
+.sub_download {
+  font-size: 13px;
+  color: #2d3033;
+  font-weight: 700; }

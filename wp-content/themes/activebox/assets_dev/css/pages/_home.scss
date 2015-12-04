@@ -8,3 +8,56 @@
 	font-size: 22px;
 	color: $text-light;
 }
+
+.box-img{
+	width: 25%;
+	float: left;
+}
+
+.employe_name{
+	font-size: 22px;
+	color: $text-dark;
+}
+
+.employe_title{
+	font-size: 13px;
+	color: $employe-title;
+	font-weight: 700;
+}
+
+.box_client{
+	width: 50%;
+	float: left;
+}
+
+.purple_box{
+	@extend .bg_purple;
+	height: 609px;
+	padding: 100px 0 100px 85px;
+}
+
+.citation{
+	font-size: 36px;
+	color: $text-light;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.client_title{
+	@extend .uppercase;
+	font-size: 13px;
+	margin-top: 40px;
+	color: $text-light;
+}
+
+.download{
+	font-size: 28px;
+	color: $text-dark;
+}
+
+.sub_download{
+	@extend .uppercase;
+	font-size: 13px;
+	color: $text-dark;
+	font-weight: 700;
+}

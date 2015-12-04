@@ -12,4 +12,11 @@
 			background-color: $red-btn-hover;
 		}
 	}
+	&.download_red{
+		background-color: $red-btn-bg;
+		&:hover{
+			color: $white;
+			background-color: $text-dark;
+		}
+	}
 }

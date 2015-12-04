@@ -131,7 +131,7 @@
             <img src="/wp-content/themes/activebox/assets_dist/img/img5.jpg" / class="img-responsive">
         </div>
         <div class="box-img">
-            <img src="/assets_dist/img/img6.jpg" / class="img-responsive">
+            <img src="/wp-content/themes/activebox/assets_dist/img/img6.jpg" / class="img-responsive">
         </div>
         <div class="box-img">
             <img src="/wp-content/themes/activebox/assets_dist/img/img7.jpg" / class="img-responsive">
@@ -187,6 +187,29 @@
                             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="box_client">
+            <img src="/wp-content/themes/activebox/assets_dist/img/cliente.jpg" class="img-responsive" />
+        </div>
+        <div class="box_client purple_box">
+            <p class="citation">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+            <p class="client_title">Susan Sims, Interaction Designer at XYZ</p>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row padding_top_100 padding_bottom_100">
+                <div class="col-xs-7 col-xs-offset-2 text-center">
+                    <p class="download">Are You Ready to Start? Download Now For Free!</p>
+                    <p class="sub_download margin_bottom_40">Fusce dapibus, tellus ac cursus commodo</p>
+                    <button type="button" class="btn download_red">Download here</button>
                 </div>
             </div>
         </div>

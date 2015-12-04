@@ -32,13 +32,24 @@ body{
 	padding-bottom: 100px;
 }
 
+.margin_top_25{
+	margin-top: 25px;
+}
+
 .margin_top_80{
 	margin-top: 80px;
 }
 
+.no_margin_bottom{
+	margin-bottom: 0;
+}
 
 .margin_bottom_25{
 	margin-bottom: 25px;
+}
+
+.margin_bottom_40{
+	margin-bottom: 40px;
 }
 
 .margin_bottom_70{
@@ -51,4 +62,17 @@ body{
 
 .transition{
 	transition: all 500ms ease-in-out;
+}
+
+.bg_purple{
+	background-color: $client-bg;
+}
+
+.clearfix{
+	content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
 }

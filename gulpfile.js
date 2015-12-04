@@ -70,6 +70,6 @@ gulp.task('watch', function() {
   livereload.listen();
 
   // Watch any files in dist/, reload on change
-  gulp.watch(['wp-content/themes/activebox/assets_dist/**']).on('change', livereload.changed);
+  gulp.watch(['wp-content/themes/activebox/**']).on('change', livereload.changed);
 
 });
