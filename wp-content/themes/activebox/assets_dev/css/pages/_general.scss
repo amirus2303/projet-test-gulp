@@ -10,8 +10,14 @@ h1{
 
 h3{
 	@extend .uppercase;
-	color: $text-dark;
 	font-weight: 700;
+	font-size: 14px;
+	&.dark{
+		color: $text-dark;
+	}
+	&.light{
+		color: $text-light;
+	}
 }
 
 p{
@@ -24,8 +30,16 @@ body{
 	padding-top: 40px;
 }
 
+.padding_top_70{
+	padding-top: 70px;
+}
+
 .padding_top_100{
 	padding-top: 100px;
+}
+
+.padding_bottom_70{
+	padding-bottom: 70px;
 }
 
 .padding_bottom_100{
@@ -75,4 +89,14 @@ body{
     clear: both;
     overflow: hidden;
     visibility: hidden;
+}
+
+.bg_blue{
+	background-color: $bg-blue;
+}
+
+.location{
+	color: $location;
+	font-size: 14px;
+	font-weight: 400;
 }

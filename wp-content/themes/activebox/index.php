@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="col-xs-4 text-center margin_bottom_70">
                     <img src="/wp-content/themes/activebox/assets_dist/img/crayon.png" />
-                    <h3 class="margin_bottom_25">Easily Customised</h3>
+                    <h3 class="margin_bottom_25 dark">Easily Customised</h3>
                     <p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
                     </p>
@@ -73,7 +73,7 @@
 
                 <div class="col-xs-4 text-center margin_bottom_70">
                     <img src="/wp-content/themes/activebox/assets_dist/img/ecran.png" />
-                    <h3 class="margin_bottom_25">Responsive Ready</h3>
+                    <h3 class="margin_bottom_25 dark">Responsive Ready</h3>
                     <p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
                     </p>
@@ -81,7 +81,7 @@
 
                 <div class="col-xs-4 text-center margin_bottom_70">
                     <img src="/wp-content/themes/activebox/assets_dist/img/ampoule.png" />
-                    <h3 class="margin_bottom_25">Modern Design</h3>
+                    <h3 class="margin_bottom_25 dark">Modern Design</h3>
                     <p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
                     </p>
@@ -89,7 +89,7 @@
 
                 <div class="col-xs-4 text-center">
                     <img src="/wp-content/themes/activebox/assets_dist/img/atome.png" />
-                    <h3 class="margin_bottom_25">Clean Code</h3>
+                    <h3 class="margin_bottom_25 dark">Clean Code</h3>
                     <p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
                     </p>
@@ -97,7 +97,7 @@
 
                 <div class="col-xs-4 text-center">
                     <img src="/wp-content/themes/activebox/assets_dist/img/cartable.png" />
-                    <h3 class="margin_bottom_25">Ready to Ship</h3>
+                    <h3 class="margin_bottom_25 dark">Ready to Ship</h3>
                     <p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
                     </p>
@@ -105,7 +105,7 @@
 
                 <div class="col-xs-4 text-center">
                     <img src="/wp-content/themes/activebox/assets_dist/img/nuage.png" />
-                    <h3 class="margin_bottom_25">Download for Free</h3>
+                    <h3 class="margin_bottom_25 dark">Download for Free</h3>
                     <p>
                         Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
                     </p>
@@ -210,6 +210,17 @@
                     <p class="download">Are You Ready to Start? Download Now For Free!</p>
                     <p class="sub_download margin_bottom_40">Fusce dapibus, tellus ac cursus commodo</p>
                     <button type="button" class="btn download_red">Download here</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg_blue">
+        <div class="container">
+            <div class="row padding_top_70 padding_bottom_70 text-center">
+                <div class="col-xs-4">
+                    <h3 class="light">Location</h3>
+                    <p class="location">3481 Melrose Place<br />Beverly Hills, CA 90210</p>
                 </div>
             </div>
         </div>

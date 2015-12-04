@@ -6396,8 +6396,12 @@ h1 {
     font-size: 60px; }
 
 h3 {
-  color: #2d3033;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 14px; }
+  h3.dark {
+    color: #2d3033; }
+  h3.light {
+    color: #ffffff; }
 
 p {
   color: #6c7279; }
@@ -6405,8 +6409,14 @@ p {
 .padding_top_40 {
   padding-top: 40px; }
 
+.padding_top_70 {
+  padding-top: 70px; }
+
 .padding_top_100 {
   padding-top: 100px; }
+
+.padding_bottom_70 {
+  padding-bottom: 70px; }
 
 .padding_bottom_100 {
   padding-bottom: 100px; }
@@ -6445,6 +6455,14 @@ p {
   clear: both;
   overflow: hidden;
   visibility: hidden; }
+
+.bg_blue {
+  background-color: #3a3e64; }
+
+.location {
+  color: #9d9fb2;
+  font-size: 14px;
+  font-weight: 400; }
 
 .header {
   background: url("/wp-content/themes/activebox/assets_dist/img/header.jpg") no-repeat top left;
