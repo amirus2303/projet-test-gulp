@@ -25,6 +25,12 @@ gulp.task('styles', function() {
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
+gulp.task('fonts', function() {
+  return gulp.src('wp-content/themes/activebox/assets_dev/fonts/*')
+    .pipe(gulp.dest('wp-content/themes/activebox/assets_dist/fonts'))
+    .pipe(notify({ message: 'Fonts task complete' }));
+});
+
 
 gulp.task('scripts', function() {
   return gulp.src('wp-content/themes/activebox/assets_dev/js/**/*.js')
@@ -48,11 +54,11 @@ gulp.task('images', function() {
 
 
 gulp.task('clean', function() {
-    return del(['wp-content/themes/activebox/assets_dist/css', 'wp-content/themes/activebox/assets_dist/js', 'wp-content/themes/activebox/assets_dist/img']);
+    return del(['wp-content/themes/activebox/assets_dist/css', 'wp-content/themes/activebox/assets_dist/js', 'wp-content/themes/activebox/assets_dist/img', 'wp-content/themes/activebox/assets_dist/fonts']);
 });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'images');
+    gulp.start('styles', 'scripts', 'images', 'fonts');
 });
 
 gulp.task('watch', function() {
@@ -65,6 +71,11 @@ gulp.task('watch', function() {
 
   // Watch image files
   gulp.watch('wp-content/themes/activebox/assets_dev/img/**/*', ['images']);
+
+  // Watch fonts files
+  gulp.watch('wp-content/themes/activebox/assets_dev/fonts/**/*', ['fonts']);
+
+  
 
   // Create LiveReload server
   livereload.listen();

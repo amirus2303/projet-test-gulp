@@ -19,7 +19,7 @@
   </head>
   <body>
     <section class="header">
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar navbar-default navbar-fixed-top js-menu">
             <div class="container">
                 <div class="row">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -222,6 +222,16 @@
                     <h3 class="light">Location</h3>
                     <p class="location">3481 Melrose Place<br />Beverly Hills, CA 90210</p>
                 </div>
+
+                <div class="col-xs-4">
+                    <h3 class="light margin_bottom_25">Share with Love</h3>
+                    <p class="location"><i class="fa fa-facebook"></i><i class="fa fa-twitter"></i><i class="fa fa-linkedin-square"></i></p>
+                </div>
+
+                <div class="col-xs-4">
+                    <h3 class="light">About ActiveBox</h3>
+                    <p class="location">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -229,6 +239,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets_dist/js/main.js"></script>
+    <script src="/wp-content/themes/activebox/assets_dist/js/main.js"></script>
   </body>
 </html>
