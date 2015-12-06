@@ -39,6 +39,12 @@ nav{
 	color: $hover-menu;
 }
 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus{
+	background-color: transparent;
+	color: $hover-menu;
+}
+
 .navbar-header, .navbar-brand{
 	@extend .transition;
 	height: 100px;

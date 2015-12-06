@@ -26,6 +26,11 @@ p{
 
 body{
 }
+
+.padding_top_30{
+	padding-top: 30px;
+}
+
 .padding_top_40{
 	padding-top: 40px;
 }
@@ -36,6 +41,11 @@ body{
 
 .padding_top_100{
 	padding-top: 100px;
+}
+
+
+.padding_bottom_30{
+	padding-bottom: 30px;
 }
 
 .padding_bottom_70{
@@ -99,4 +109,8 @@ body{
 	color: $location;
 	font-size: 14px;
 	font-weight: 400;
+}
+
+.bg_dark_blue{
+	background-color: $footer-bg;
 }

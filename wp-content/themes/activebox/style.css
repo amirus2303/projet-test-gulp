@@ -1,3 +1,11 @@
+/*
+Theme Name: Activebox
+Theme URI: https://amirnadji.com
+Author: Amir Nadji
+Author URI: https://amirnadji.com
+Description: Template Activeobx
+Version: 1.0
+*/
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -8474,6 +8482,11 @@ nav {
   background-color: transparent;
   color: #e84545; }
 
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: #e84545; }
+
 .navbar-header, .navbar-brand {
   height: 100px;
   line-height: 70px; }
@@ -8513,6 +8526,9 @@ h3 {
 p {
   color: #6c7279; }
 
+.padding_top_30 {
+  padding-top: 30px; }
+
 .padding_top_40 {
   padding-top: 40px; }
 
@@ -8521,6 +8537,9 @@ p {
 
 .padding_top_100 {
   padding-top: 100px; }
+
+.padding_bottom_30 {
+  padding-bottom: 30px; }
 
 .padding_bottom_70 {
   padding-bottom: 70px; }
@@ -8570,6 +8589,9 @@ p {
   color: #9d9fb2;
   font-size: 14px;
   font-weight: 400; }
+
+.bg_dark_blue {
+  background-color: #313454; }
 
 .header {
   background: url("/wp-content/themes/activebox/assets_dist/img/header.jpg") no-repeat top left;
