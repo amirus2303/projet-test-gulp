@@ -32,6 +32,13 @@ gulp.task('fonts', function() {
 });
 
 
+gulp.task('vendor', function() {
+  return gulp.src('wp-content/themes/activebox/assets_dev/vendor/*')
+    .pipe(gulp.dest('wp-content/themes/activebox/assets_dist/vendor'))
+    .pipe(notify({ message: 'Fonts task complete' }));
+});
+
+
 gulp.task('scripts', function() {
   return gulp.src('wp-content/themes/activebox/assets_dev/js/**/*.js')
     .pipe(jshint('.jshintrc'))
@@ -54,11 +61,11 @@ gulp.task('images', function() {
 
 
 gulp.task('clean', function() {
-    return del(['wp-content/themes/activebox/assets_dist/css', 'wp-content/themes/activebox/assets_dist/js', 'wp-content/themes/activebox/assets_dist/img', 'wp-content/themes/activebox/assets_dist/fonts']);
+    return del(['wp-content/themes/activebox/assets_dist/css', 'wp-content/themes/activebox/assets_dist/js', 'wp-content/themes/activebox/assets_dist/img', 'wp-content/themes/activebox/assets_dist/fonts', 'wp-content/themes/activebox/assets_dist/vendor']);
 });
 
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'images', 'fonts');
+    gulp.start('styles', 'scripts', 'images', 'fonts', 'vendor');
 });
 
 gulp.task('watch', function() {
@@ -74,6 +81,9 @@ gulp.task('watch', function() {
 
   // Watch fonts files
   gulp.watch('wp-content/themes/activebox/assets_dev/fonts/**/*', ['fonts']);
+
+  // Watch fonts files
+  gulp.watch('wp-content/themes/activebox/assets_dev/vendor/**/*', ['vendor']);
 
   
 

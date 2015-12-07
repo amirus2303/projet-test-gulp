@@ -7,8 +7,8 @@
     </footer>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/vendor/jquery.min.js"></script>
+    <script src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/vendor/bootstrap.min.js"></script>
     <script src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/js/main.js"></script>
     <?php wp_footer(); ?>
   </body>
