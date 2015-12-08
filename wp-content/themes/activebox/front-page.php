@@ -1,84 +1,9 @@
 <?php get_header(); ?>
 
 <?php get_template_part( "activities" ); ?>
+<?php get_template_part( "img-boxes" ); ?>
 
-
-    <section>
-        <div class="box-img js-box-img">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/img/img1.jpg">
-            <div class="box-img-content">
-                <div class="box-img-content_wrapper text-center">
-                    <h3 class="light">Project name</h3>
-                    <p class="white">Website design</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="box-img js-box-img">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/img/img2.jpg">
-            <div class="box-img-content">
-                <div class="box-img-content_wrapper text-center">
-                    <h3 class="light">Project name</h3>
-                    <p class="white">Website design</p>
-                </div>
-            </div>
-        </div>
-        <div class="box-img js-box-img">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/img/img3.jpg">
-            <div class="box-img-content">
-                <div class="box-img-content_wrapper text-center">
-                    <h3 class="light">Project name</h3>
-                    <p class="white">Website design</p>
-                </div>
-            </div>
-        </div>
-        <div class="box-img js-box-img">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/img/img4.jpg">
-            <div class="box-img-content">
-                <div class="box-img-content_wrapper text-center">
-                    <h3 class="light">Project name</h3>
-                    <p class="white">Website design</p>
-                </div>
-            </div>
-        </div>
-        <div class="box-img js-box-img">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/img/img5.jpg">
-            <div class="box-img-content">
-                <div class="box-img-content_wrapper text-center">
-                    <h3 class="light">Project name</h3>
-                    <p class="white">Website design</p>
-                </div>
-            </div>
-        </div>
-        <div class="box-img js-box-img">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/img/img6.jpg">
-            <div class="box-img-content">
-                <div class="box-img-content_wrapper text-center">
-                    <h3 class="light">Project name</h3>
-                    <p class="white">Website design</p>
-                </div>
-            </div>
-        </div>
-        <div class="box-img js-box-img">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/img/img7.jpg">
-            <div class="box-img-content">
-                <div class="box-img-content_wrapper text-center">
-                    <h3 class="light">Project name</h3>
-                    <p class="white">Website design</p>
-                </div>
-            </div>
-        </div>
-        <div class="box-img js-box-img">
-            <img src="<?php bloginfo("stylesheet_directory"); ?>/assets_dist/img/img8.jpg">
-            <div class="box-img-content">
-                <div class="box-img-content_wrapper text-center">
-                    <h3 class="light">Project name</h3>
-                    <p class="white">Website design</p>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </section>
+    
 
     <section>
         <div class="container">
