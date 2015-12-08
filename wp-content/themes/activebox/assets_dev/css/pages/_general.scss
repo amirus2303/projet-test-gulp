@@ -12,16 +12,24 @@ h3{
 	@extend .uppercase;
 	font-weight: 700;
 	font-size: 14px;
+
 	&.dark{
 		color: $text-dark;
 	}
 	&.light{
 		color: $text-light;
+		animation-duration: 0.5s;
+		animation-delay: 0;
 	}
 }
 
 p{
 	color: $p;
+	&.white{
+		color: $white;
+		animation-duration: 0.5s;
+		animation-delay: 0;
+	}
 }
 
 body{
@@ -113,4 +121,8 @@ body{
 
 .bg_dark_blue{
 	background-color: $footer-bg;
+}
+
+.overflow_hidden{
+	overflow: hidden;
 }

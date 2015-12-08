@@ -3,7 +3,7 @@
             <div class="row">
             <?php query_posts('post_type=activities'); ?>
             <?php while (have_posts()) : the_post(); ?> 
-                <div class="col-xs-4 text-center margin_bottom_70">
+                <div class="col-xs-4 text-center margin_bottom_70 overflow_hidden">
                     <?php the_post_thumbnail(); ?>
                     <h3 class="margin_bottom_25 dark"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     <p>
