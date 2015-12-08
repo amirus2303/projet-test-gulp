@@ -7,7 +7,7 @@
             <p class="title_small padding_top_40">
                 <?php echo wp_strip_all_tags( get_the_content() ); ?>
             </p>
-            <button type="button" class="btn red margin_top_80"> Find out more</button>
+            <button type="button" class="btn red margin_top_80"><?php the_field('find_out_more_banner'); ?></button>
         </div>
         
     </div>
