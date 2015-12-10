@@ -2,7 +2,7 @@
 <footer class="bg_dark_blue text-center">
         <div class="container">
             <div class="row padding_top_30 padding_bottom_30">
-                <p class="location">Copyright © 2015 ActiveBox. All Rights Reserved<br />Made with Y by Kamal Chaneman</p>
+                <p class="location"><?php the_field('footer'); ?></p>
             </div>
         </div>
     </footer>

@@ -131,6 +131,69 @@ function create_taxonomy_img_boxes()
 	));
 }
 
+
+// Custom post type - Employés
+add_action('init', 'employes_init');
+function employes_init()
+{
+	$labels = array(
+	'name' => 'Boites empolyés',
+	'singular_name' => 'Boite empolyé',
+	'add_new' => 'Ajouter une boite empolyé',
+	'add_new_item' => 'Ajouter un nouvelle boite empolyé',
+	'edit_item' => 'Modifier une boite empolyé',
+	'new_item' => 'Nouvelle boite empolyé',
+	'view_item' => 'Voir la boite empolyé',
+	'search_items' => 'Rechercher une boite empolyé',
+	'not_found' => 'Aucune boite empolyé trouvée',
+	'not_found_in_trash' => 'Aucune boite empolyé dans la corbeille',
+	'menu_name' => 'Mes boites empolyés'
+	
+	);
+	
+	$args = array(
+	'labels' => $labels,
+	'public' => true,
+	'show_ui' => true,
+	'show_in_menu' => true,
+	'query_var' => true,
+	'rewrite' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'menu_position' => 5,
+	'supports' => array('title','editor','thumbnail','custom-fields','comments')
+	
+	);
+	register_post_type('employes',$args);
+}
+
+add_action ('init', 'create_taxonomy_employes', 0);
+function create_taxonomy_employes()
+{
+	$labels = array(
+	'name' => 'Catégories boites employés',
+	'singular_name' => 'Catégorie boite employé',
+	'search_items' => 'Rechercher une catégorie',
+	'all_items' => 'Toutes les catégories',
+	'edit_item' => 'Editer une catégorie',
+	'update_item' => 'Modifier une catégorie',
+	'add_new_item' => 'Ajouter une catégorie',
+	'new_item_name' => 'Nouvelle catégorie',
+	'menu_name' => 'Catégorie'
+	
+	);
+	
+	register_taxonomy('categories', array('employes'), array (
+	'hierarchical' => true,
+	'labels' => $labels,
+	'show_ui' => true,
+	'query_var' => true,
+	'rewrite' => array('slug' => 'categories')
+	
+	
+	));
+}
+
 //Suppression des dimensions hard codées pour les box images
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10, 3 );
 
